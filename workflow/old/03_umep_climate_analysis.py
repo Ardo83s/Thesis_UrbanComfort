@@ -45,7 +45,7 @@ sys.path.append(os.path.join(QGIS_PATH, 'apps', 'qgis-ltr', 'python', 'plugins')
 sys.path.append(os.path.join(QGIS_PATH, 'apps', 'Python312', 'Lib', 'site-packages'))
 
 #Add UMEP from user-installed plugin location
-sys.path.append(r"C:\Users\Andrea\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins")
+sys.path.append(r"C:\Users\Ardo\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins")
 
 # ----------------------------------------------------------------------------------
 # ⚙️ Set QGIS environment variables
@@ -86,7 +86,7 @@ QgsApplication.processingRegistry().addProvider(umep_provider)
 import processing
 
 svf_output =  processing.run("umep:Urban Geometry: Sky View Factor",
-                            {'INPUT_DSM':'C:/Users/Andrea/Desktop/thesis/rotated_json/dsm_045deg.tif',
+                            {'INPUT_DSM':'C:/Users/Ardo/Desktop/thesis/processed/width15_deg030_h15to15/dsm.tif',
                              'INPUT_CDSM':None,
                              'TRANS_VEG':3,
                              'INPUT_TDSM':None,
@@ -97,8 +97,8 @@ svf_output =  processing.run("umep:Urban Geometry: Sky View Factor",
                              'CLUSTERS':5,
                              'INPUT_DEM':None,
                              'INPUT_SVFHEIGHT':1,
-                             'OUTPUT_DIR':'C:/Users/Andrea/Desktop/thesis/rotated_json',
-                             'OUTPUT_FILE':'C:/Users/Andrea/Desktop/thesis/rotated_json/auto_svf_045deg.tif'})
+                             'OUTPUT_DIR':'C:/Users/Ardo/Desktop/thesis/processed/width15_deg030_h15to15',
+                             'OUTPUT_FILE':'C:/Users/Ardo/Desktop/thesis/processed/width15_deg030_h15to15/svf.tif'})
 
 """wallHeightRatio_outputs =   processing.run("umep:Urban Geometry: Wall Height and Aspect",
                                            {'INPUT':'C:/Users/Andrea/Desktop/thesis/rotated_json/dsm_000deg.tif',
