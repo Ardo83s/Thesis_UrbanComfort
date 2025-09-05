@@ -75,7 +75,7 @@ import processing
 # ----------------------------------------------------------------------------------
 # 🔁 Loop through folders and run tools
 # ----------------------------------------------------------------------------------
-base_dir = Path(r'C:/Users/Ardo/Desktop/thesis2/patches_new')
+base_dir = Path(r'C:/Users/Ardo/Desktop/thesis2/patches_combined_Copy')
 
 try:
     for folder in base_dir.iterdir():
@@ -151,7 +151,7 @@ try:
                         'ABS_L': 0.95,
                         'POSTURE': 0,
                         'CYL': True,
-                        'INPUTMET': r'C:\Users\Ardo\Desktop\thesis2\climate_BCN_17Jul.txt',
+                        'INPUTMET': r'C:\Users\Ardo\Desktop\thesis2\climate_BCN_July.txt',
                         'ONLYGLOBAL': False,
                         'UTC': 1,
                         'WOI_FILE': None,

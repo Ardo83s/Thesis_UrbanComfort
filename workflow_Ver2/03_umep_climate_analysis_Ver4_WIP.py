@@ -58,7 +58,7 @@ os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = os.path.join(QGIS_PATH, 'apps', 'Qt5
 from qgis.core import QgsApplication
 qgs = QgsApplication([], False)
 qgs.initQgis()
-print("✅ QGIS initialized successfully with Python 3.12!")
+print("✅ QGIS initialized successfully with Python 3.12")
 
 # ----------------------------------------------------------------------------------
 # 🧠 Initialize Processing + UMEP
@@ -75,7 +75,7 @@ import processing
 # ----------------------------------------------------------------------------------
 # 🔁 Loop through folders and run tools
 # ----------------------------------------------------------------------------------
-base_dir = Path(r'C:/Users/Ardo/Desktop/thesis2/patches_combined_new')
+base_dir = Path(r'C:/Users/Ardo/Desktop/thesis2/patches_combined')
 
 try:
     for folder in base_dir.iterdir():
@@ -153,7 +153,7 @@ try:
                     'ABS_L': 0.95,
                     'POSTURE': 0,
                     'CYL': True,
-                    'INPUTMET': r'C:\Users\Ardo\Desktop\thesis2\climate_BCN_17Jul.txt',
+                    'INPUTMET': r'C:\Users\Ardo\Desktop\thesis2\climate_BCN_July.txt',
                     'ONLYGLOBAL': False,
                     'UTC': 1,
                     'WOI_FILE': None,
@@ -167,7 +167,7 @@ try:
                     'HEIGHT': 180,
                     'SEX': 0,
                     'SENSOR_HEIGHT': 10,
-                    'OUTPUT_TMRT': True,
+                    'OUTPUT_TMRT': False,
                     'OUTPUT_KDOWN': False,
                     'OUTPUT_KUP': False,
                     'OUTPUT_LDOWN': False,

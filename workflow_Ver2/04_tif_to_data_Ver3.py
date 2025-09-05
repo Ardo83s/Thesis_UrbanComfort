@@ -7,7 +7,7 @@ from shapely.geometry import shape
 from rasterio.features import geometry_mask
 
 # === BASE DIRECTORY TO WALK
-base_dir = r"C:\Users\Ardo\Desktop\thesis\processed"
+base_dir = r"C:\Users\Ardo\Desktop\thesis2\patches_combined"
 
 # === Helper function to process each folder
 def process_files(geojson_path, tif_path, rotated_json_path):
